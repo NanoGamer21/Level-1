@@ -1,4 +1,4 @@
- // Copyright Wintriss Technical Schools 2013
+// Copyright Wintriss Technical Schools 2013
 import java.applet.AudioClip;
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -57,13 +57,13 @@ public class Jeopardy implements ActionListener {
         frame.add(quizPanel);
         
         // 6. Use the createButton method to set the value of firstButton 
-        firstButton=createButton("100");
+        firstButton=createButton("200");
     // 7. Add the firstButton to the quizPanel
         quizPanel.add(firstButton);
         // 8. Write the code inside the createButton() method below. Check that your game looks like Figure 1 in the Jeopardy Handout - http://bit.ly/1bvnvd4.
         
         // 9. Use the secondButton variable to hold a button using the createButton method
-        secondButton=createButton("200");
+        secondButton=createButton("300");
         // 10. Add the secondButton to the quizPanel
         quizPanel.add(secondButton);
         // 11. Add action listeners to the buttons (2 lines of code)
@@ -102,12 +102,12 @@ public class Jeopardy implements ActionListener {
     public void actionPerformed(ActionEvent arg0) {
         // Remove this temporary message:
         
-        // Use the method that plays the jeopardy theme music.
-    	playJeopardyTheme();
+        //Use the method that plays the jeopardy theme music.
+    	playSound("MII Music.wav");
         JButton buttonPressed = (JButton) arg0.getSource();
         // If the buttonPressed was the firstButton
        if(buttonPressed==firstButton) {
-    	   askQuestion("what company created the Uncharted series?","Naugty dogs",200);
+    	   askQuestion("what company created the Uncharted series?","Naughty Dog",200);
        }
             // Call the askQuestion() method
             
